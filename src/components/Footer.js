@@ -1,46 +1,41 @@
 import React from 'react'
+import {FaFacebook, FaInstagram, FaTwitter, FaPinterest} from 'react-icons/fa'
 import '../style/FooterStyles.css'
-import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
-
-
-function Footer() {
-    return (
-        <div className='footer'>
-            <div className="container">
-                <div className="top">
-                    <h3>BEACHES.</h3>
-                    <div className="social">
-                        <FaFacebook className='icon' />
-                        <FaInstagram className='icon' />
-                        <FaTwitter className='icon' />
-                        <FaPinterest className='icon' />
-                        <FaYoutube className='icon' />
-                    </div>
+const Footer = () => {
+  return (
+    <div className='footer'>
+            <div className='social'>
+                <FaFacebook className='icon' />
+                <FaInstagram className='icon' />
+                <FaTwitter className='icon' />
+                <FaPinterest className='icon' />
+            </div>
+            <div className='container'>
+                <div className='col'>
+                    <h3>Quick Links</h3>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Destinations</p>
+                    <p>Services</p>
                 </div>
-                <div className="bottom">
-                    <div className="left">
-                        <ul>
-                            <li>About</li>
-                            <li>Partnerships</li>
-                            <li>Careers</li>
-                            <li>Newsroom</li>
-                            <li>Advertising</li>
-                        </ul>
-                    </div>
-                    <div className="right">
-                        <ul>
-                            <li>Contact</li>
-                            <li>Terms</li>
-                            <li>Policy</li>
-                            <li>Privacy</li>
-                            <li>Pricing</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
+                <div className='col'>
+                    <h3>Information</h3>
+                    <p>Ho Chi Minh city</p>
+                    <p>+8412345678</p>
+                    <p>chinhcvng1518@gmail.com</p>
+                    <p>7:00am - 7:00pm</p>
                 </div>
+                <div className='col'>
+                    <h3>Legal</h3>
+                    <p>Company</p>
+                    <p>Details</p>
+                    <p>Planning</p>
+                    <p>About Us</p>
+                </div>
+
             </div>
         </div>
-    )
+  )
 }
 
 export default Footer
