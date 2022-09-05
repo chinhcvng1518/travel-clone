@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Search from './components/Search';
-import Services from './components/Services';
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Hero />
       <Search />
       <Destinations />
-      <Services/>
       <ImageCarousel />
       <Footer />
     </div>
