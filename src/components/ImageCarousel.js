@@ -14,37 +14,34 @@ import Cancun from '../assets/Cancun.jpg'
 
 function ImageCarousel() {
     return (
-        <div name='carousel' className='container'>
-            <Carousel className='carousel' showArrows={true} autoPlay={false} infiniteLoop={true} >
-                <div>
-                    <img src={Paris} alt='/' />
-                    {/* <p className="legend">Paris</p> */}
-                </div>
-                <div>
-                    <img src={Crete} alt='/' />
-                    {/* <p className="legend">Crete</p> */}
-                </div>
-                <div>
-                    <img src={Rome} alt='/' />
-                    {/* <p className="legend">Rome</p> */}
-                </div>
-                <div>
-                    <img src={Cancun} alt='/' />
-                    {/* <p className="legend">Cancun</p> */}
-                </div>
-                <div>
-                    <img src={BoraBora} alt='/' />
-                    {/* <p className="legend">Maldives 1</p> */}
-                </div>
-                <div>
-                    <img src={BoraBora2} alt='/' />
-                    {/* <p className="legend">Legend 2</p> */}
-                </div>
-                <div>
-                    <img src={Maldives} alt='/' />
-                    {/* <p className="legend">Legend 3</p> */}
-                </div>
-            </Carousel>
+        
+        <div name='carousel' className='carousel'>
+            <div className='container'>
+                <h1>Recommended for you</h1>
+                <Carousel className='carousel' showArrows={true} autoPlay={false} infiniteLoop={true} >
+                    <div>
+                        <img src={Paris} alt='/' />
+                    </div>
+                    <div>
+                        <img src={Crete} alt='/' />
+                    </div>
+                    <div>
+                        <img src={Rome} alt='/' />
+                    </div>
+                    <div>
+                        <img src={Cancun} alt='/' />
+                    </div>
+                    <div>
+                        <img src={BoraBora} alt='/' />
+                    </div>
+                    <div>
+                        <img src={BoraBora2} alt='/' />
+                    </div>
+                    <div>
+                        <img src={Maldives} alt='/' />
+                    </div>
+                </Carousel>
+            </div>
         </div>
 
 

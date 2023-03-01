@@ -2,8 +2,7 @@ import React from 'react'
 import { BiSearch } from 'react-icons/bi'
 import { BsPerson } from 'react-icons/bs'
 
-import { Link } from 'react-scroll'
-
+import { Link } from 'react-router-dom'
 import '../style/NavbarStyles.css'
 
 function Navbar() {
@@ -13,11 +12,26 @@ function Navbar() {
                 <h2>TRAVEL</h2>
             </div>
             <ul className="nav-menu">
-                <Link to='home' smooth={true} duration={500} ><li>Home</li></Link>
-                <Link to='destinations' smooth={true} duration={500} ><li>Destinations</li></Link>
-                <Link to='carousel' smooth={true} duration={500} ><li>Travel</li></Link>
-                <Link to='search' smooth={true} duration={500} ><li>Book</li></Link>
-                <Link to='views' smooth={true} duration={500} ><li>Views</li></Link>
+                <li>
+                    <Link to='/' smooth={true} duration={500} >
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/book' smooth={true} duration={500} >
+                        Booking
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/travel' smooth={true} duration={500} >
+                        Travel
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/view' smooth={true} duration={500} >
+                        Views
+                    </Link>
+                </li>
             </ul>
             <div className="nav-icons">
                 <BiSearch className='icon' style={{ marginRight: '1rem' }} />
